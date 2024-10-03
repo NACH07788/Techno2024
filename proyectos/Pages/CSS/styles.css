@@ -1,3 +1,34 @@
-id="tittle_1" {
-
+/* Estilo básico para la barra de navegación */
+header{
+    text-align: center;
 }
+nav {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px; /* Espaciado alrededor */
+    text-align: right; /* Centra los botones */
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block; /* Alinea los elementos en línea */
+    margin: 0 4px; /* Espaciado entre botones */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #555; /* Fondo de los botones */
+    color: white; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+    a:hover {
+        background-color: #777; /* Color de fondo al pasar el mouse */
+    }
