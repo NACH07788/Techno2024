@@ -1,34 +1,95 @@
-/* Estilo básico para la barra de navegación */
-header{
-    text-align: center;
-}
-nav {
-    background-color: #333; /* Fondo oscuro */
-    padding: 10px; /* Espaciado alrededor */
-    text-align: right; /* Centra los botones */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Fondo neutro */
+    color: #333; /* Color de texto oscuro para buen contraste */
 }
 
-ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
+/* Estilo para el contenedor del header */
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y la barra de navegación a la derecha */
+    align-items: center; /* Alinea verticalmente en el centro */
+    padding: 5px 20px; /* Espaciado alrededor */
+   
+}
+
+section {
+    /* typical phone screen resolution */
+    @media only screen and (max-width : 667px) {
+    }
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    }
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+
+    background-color: white; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados para un look más suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    padding: 30px; /* Espaciado interno amplio */
+    text-align: center; /* Centramos el contenido */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 95%; /* Ancho máximo para controlar el tamaño */
+    margin: auto; /* Centrar el bloque en la página */
+}
+.boton-info {
+    background-color: #cb6ce6; /* Fondo lila */
+    color: white; /* Texto en blanco */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados para el botón */
+    padding: 10px 20px;
+    margin:1%;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image-inicio-container {
+    max-width: 75%;
+    background: url("D:\documentos\Cursos\Techno2024\proyectos\Pages\CSS\Images for WEB HE\IMG-20240907-WA0051.jpg");
+    background-size: cover;
+    
+}
+.logo-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el título */
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espaciado entre el logo y el título */
+}
+
+.titulo-ico {
+    color: white;
+    font-size: 24px;
+    margin: 0; /* Elimina márgenes */
+}
+
+
+/* Estilo para la barra de navegación */
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Alinea los elementos de la lista en una fila */
 }
 
-li {
-    display: inline-block; /* Alinea los elementos en línea */
-    margin: 0 4px; /* Espaciado entre botones */
-}
-
-a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    background-color: #555; /* Fondo de los botones */
-    color: white; /* Texto blanco */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de texto */
-    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
-}
-
-    a:hover {
-        background-color: #777; /* Color de fondo al pasar el mouse */
+    nav ul li {
+        margin-left: 2%;
     }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            background-color: #cb6ce6; /* Color del fondo de los botones */
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                background-color: black; /* Cambia de color cuando pasas el mouse */
+            }

@@ -1,48 +1,58 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <!--el tipo de codificaci�n-->
-        <meta lang="es-ar" />
-        <!--Esto establece el idioma en espa�ol-->
-        <meta name="description" content="Pagina de bienvenida de mi emprendimiento de herreria
+<head>
+    <meta charset="utf-8" />
+    <!--el tipo de codificaci�n-->
+    <meta lang="es-ar" />
+    <!--Esto establece el idioma en espa�ol-->
+    <meta name="description" content="Pagina de bienvenida de mi emprendimiento de herreria
                   ofrecemos instalación en obra" />
-        <meta name="author" content="Ignacio, if7788@outlook.es, +54-9-3757-211-535" />
-        <meta http-equiv="Cache-Control" content="no-cache" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ignacio, if7788@outlook.es, +54-9-3757-211-535" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="D:\documentos\Cursos\Techno2024\proyectos\Pages\CSS\Images for WEB HE\LOGO.png" type="image/png">
+    <link href="D:\documentos\Cursos\Techno2024\proyectos\Pages\CSS\styles.css" rel="stylesheet" />
 
-        <title>HE</title>
-    </head>
-   
-    <body>
-        <header>Herreria Emiliano</header>
+
+    <title>HE</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="D:\documentos\Cursos\Techno2024\proyectos\Pages\CSS\Images for WEB HE\LOGO.png" alt="Logo de Herrería Emiliano" class="logo">
+            <h1 class="titulo_ico" href="index.html">HERRERIA EMILIANO</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="trabajos.html">Trabajos</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="about.html">Nosotros</a></li>
             </ul>
         </nav>
 
-        <main>
-            <section id="contacto">
-                <h2>Formulario de Contacto</h2>
-                <form action="#" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+    </header>
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+    <main>
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST">
+                <label size="30" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <h4>© Todos los derechos reservados 2024</h4>
-        </footer>
-    </body>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h4>© Todos los derechos reservados 2024</h4>
+    </footer>
+</body>
 </html>
