@@ -46,12 +46,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.image-inicio-container {
-    max-width: 75%;
-    background: url("D:\documentos\Cursos\Techno2024\proyectos\Pages\CSS\Images for WEB HE\IMG-20240907-WA0051.jpg");
-    background-size: cover;
-    
-}
 .logo-container {
     display: flex;
     align-items: center; /* Alinea verticalmente el logo y el título */
@@ -93,3 +87,14 @@ nav ul {
             nav ul li a:hover {
                 background-color: black; /* Cambia de color cuando pasas el mouse */
             }
+.text-index{
+    margin:20%;
+    padding:10%;
+    align-content:center;
+    justify-content:center;
+    z-index:10;
+}
+
+    .image-index{
+        z-index:5;
+    }
