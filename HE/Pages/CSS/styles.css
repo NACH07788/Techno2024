@@ -1,12 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html{
+html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    
+
 }
 
 /*ESTILO PARA LA ESTRUCTURA SEMANTICA*/
@@ -18,60 +17,77 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
+
 /* Estilo para el contenedor del header */
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y la barra de navegaci�n a la derecha */
-    align-items: center; /* Alinea verticalmente en el centro */
-    padding: 5px 20px; /* Espaciado alrededor */
-   
+    justify-content: space-between;
+    /* Alinea el logo a la izquierda y la barra de navegaci�n a la derecha */
+    align-items: center;
+    /* Alinea verticalmente en el centro */
+    padding: 5px 20px;
+    /* Espaciado alrededor */
+
 }
 
-main{
+main {
     justify-content: center;
     align-items: center;
     padding: 0%;
 }
-section {
-    /* typical phone screen resolution */
-    @media only screen and (max-width : 667px) {
-    }
-    /* landscape orientation */
-    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
-    }
-    /* portrait orientation */
-    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
-    }
 
-    background-color: white; /* Fondo blanco */
-    border-radius: 2px; /* Bordes redondeados para un look mas suave */
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-    padding: 0%; /* Espaciado interno para mis bloques de section */
-    text-align: center; /* Centrar el contenido */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%; /* Ancho maximo para controlar el tamanio */
-    margin: auto; /* Centrar el bloque en la pagina */
+section {
+
+    /* typical phone screen resolution */
+    @media only screen and (max-width : 667px) {}
+
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {}
+
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {}
+
+    background-color: white;
+    /* Fondo blanco */
+    border-radius: 2px;
+    /* Bordes redondeados para un look mas suave */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para darle profundidad */
+    padding: 0%;
+    /* Espaciado interno para mis bloques de section */
+    text-align: center;
+    /* Centrar el contenido */
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+    max-width: 100%;
+    /* Ancho maximo para controlar el tamanio */
+    margin: auto;
+    /* Centrar el bloque en la pagina */
 }
+
 /*FIN ESTILO DE ESTRUCTURA SEMANTICA*/
 
 /*INICIO NAVBAR SETTINGS*/
 .logo_container {
     display: flex;
-    align-items: center; /* Alinea verticalmente el logo y el titulo */
+    align-items: center;
+    /* Alinea verticalmente el logo y el titulo */
 }
 
 .logo {
-    height: 50px; 
-    margin-right: 10px; /* Espaciado entre el logo y el titulo */
+    height: 50px;
+    margin-right: 10px;
+    /* Espaciado entre el logo y el titulo */
 }
 
 .titulo_ico {
     color: black;
     font-size: 24px;
-    margin: 0; /* Elimina margenes */
+    margin: 0;
+    /* Elimina margenes */
 }
 
 
@@ -80,77 +96,94 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Alinea los elementos de la lista en una fila */
+    display: flex;
+    /* Alinea los elementos de la lista en una fila */
 }
 
-    nav ul li {
-        margin-left: 2%;
-    }
+nav ul li {
+    margin-left: 2%;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 15px;
-            background-color: #cb6ce6; /* Color del fondo de los botones */
-            border-radius: 20px;
-            transition: background-color 0.3s ease;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #cb6ce6;
+    /* Color del fondo de los botones */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
 
-            nav ul li a:hover {
-                background-color: black; /* Cambia de color cuando pasas el mouse */
-            }
+nav ul li a:hover {
+    background-color: black;
+    /* Cambia de color cuando pasas el mouse */
+}
+
 /*FIN NAV SETTINGS*/
 /*Body Inicio*/
-.container_inicio{
-        z-index: index 1;;
+.container_inicio {
+    z-index: index 1;
+    ;
+
     /* typical phone screen resolution */
-    @media only screen and (max-width : 667px) {
-    }
+    @media only screen and (max-width : 667px) {}
+
     /* landscape orientation */
-    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
-    }
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {}
+
     /* portrait orientation */
-    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
-    }
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {}
+
     width: 100%;
     height: 3%;
     overflow: hidden;
     position: relative;
     margin: 0% auto;
     padding: 0em;
-    
-    }
-.container_inicio img{
+
+}
+
+.container_inicio img {
     width: 100%;
     height: auto;
     margin-bottom: 0%;
     object-fit: cover;
     filter: blur(3px);
 }
+
 .boton_info {
-    background-color: #cb6ce6; /* Fondo lila */
-    color: white; /* Texto en blanco */
-    border:0cm;
-    border-radius: 25px; /* Bordes redondeados para el bot�n */
+    background-color: #cb6ce6;
+    /* Fondo lila */
+    color: white;
+    /* Texto en blanco */
+    border: 0cm;
+    border-radius: 25px;
+    /* Bordes redondeados para el bot�n */
     padding: 15px 20px;
-    margin:1%;
+    margin: 1%;
     font-size: 1.5em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    position: absolute; /* Relativo al contenedor */
-    bottom: 10%; /* Distancia desde el fondo de la imagen */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Ajustar al centro */
-    z-index: 2; /* Encima de la imagen */
+    position: absolute;
+    /* Relativo al contenedor */
+    bottom: 10%;
+    /* Distancia desde el fondo de la imagen */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Ajustar al centro */
+    z-index: 2;
+    /* Encima de la imagen */
 }
-.container_inicio h2{
+
+.container_inicio h2 {
     position: absolute;
     font-size: 3rem;
     padding: 1em;
-    align-content:center;
-    justify-content:center;
-    z-index:10;
+    align-content: center;
+    justify-content: center;
+    z-index: 10;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -158,13 +191,15 @@ nav ul {
     border-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
 }
+
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  /*Media Queries para mi h2 que me estaba causando problemas en mobile*/
-  @media (max-width: 768px) {
+}
+
+/*Media Queries para mi h2 que me estaba causando problemas en mobile*/
+@media (max-width: 768px) {
     .container_inicio h2 {
         font-size: 1.8rem;
     }
@@ -172,7 +207,7 @@ nav ul {
     .boton_info {
         font-size: 1rem;
         padding: 10px 12px;
-        bottom: 10%; 
+        bottom: 10%;
     }
 }
 
@@ -184,55 +219,69 @@ nav ul {
     .boton_info {
         font-size: 0.9rem;
         padding: 8px 10px;
-        bottom: 8%; 
+        bottom: 8%;
     }
 }
 
 /*Body FINAL*/
 
 /*Footer*/
-a{
+a {
     text-decoration: none;
     font-size: 17px;
 }
-p{
+
+p {
     font-size: 17px;
 }
-a:hover{
-    color:#cb6ce6 !important;
+
+a:hover {
+    color: #cb6ce6 !important;
 }
-i{
-    font-size: 25px; /*tamaño de mis iconos*/
+
+i {
+    font-size: 25px;
+    /*tamaño de mis iconos*/
 }
+
 /*FIN Footer*/
 
 /*Formulario*/
 .contenedor_formulario {
     width: 100%;
-    max-width: 500px; /* Limita el ancho */
-    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 500px;
+    /* Limita el ancho */
+    margin: 0 auto;
+    /* Centra horizontalmente */
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo claro */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 .formulario_de_contacto {
     display: flex;
-    flex-direction: column; /* Alinear elementos en columna */
-    gap: 15px; /* Espaciado entre los campos */
-}
-/*Titulo de mi formulario*/
-.formulario_de_contacto h2 {
-    text-align: center; 
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #333; 
+    flex-direction: column;
+    /* Alinear elementos en columna */
+    gap: 15px;
+    /* Espaciado entre los campos */
 }
 
-.formulario_de_contacto label{
+/*Titulo de mi formulario*/
+.formulario_de_contacto h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.formulario_de_contacto label {
     font-size: 1em;
-    color: #555; /* Texto de etiquetas */
+    color: #555;
+    /* Texto de etiquetas */
 }
 
 .formulario_de_contacto input,
@@ -240,25 +289,32 @@ i{
     width: 100%;
     padding: 10px;
     font-size: 1em;
-    border: 1px solid #ccc; /* Borde claro */
-    border-radius: 5px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluir padding en el ancho */
-    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    /* Borde claro */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-sizing: border-box;
+    /* Incluir padding en el ancho */
+    background-color: #fff;
+    /* Fondo blanco */
 }
 
 .formulario_de_contacto input:focus,
 .formulario_de_contacto textarea:focus {
-    border-color: #cb6ce6; /* Resaltar al enfocar */
-    outline: none; 
-    box-shadow: 0 0 5px rgba(203, 108, 230, 0.5); /* Resaltar con sombra */
+    border-color: #cb6ce6;
+    /* Resaltar al enfocar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(203, 108, 230, 0.5);
+    /* Resaltar con sombra */
 }
 
 .formulario_de_contacto textarea {
-    resize: none; /* Evitar redimensionamiento manual */
+    resize: none;
+    /* Evitar redimensionamiento manual */
 }
 
 .formulario_de_contacto .submit_btn {
-    background-color: #cb6ce6; 
+    background-color: #cb6ce6;
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -269,7 +325,8 @@ i{
 }
 
 .formulario_de_contacto .submit_btn:hover {
-    background-color: #b453d3; /* Color más oscuro al pasar el mouse */
+    background-color: #b453d3;
+    /* Color más oscuro al pasar el mouse */
 }
 
 /*FIN Formulario*/
