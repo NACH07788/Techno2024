@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    width: 99%;
+}
 /* Estilo para el contenedor del header */
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -12,7 +18,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(white, #cb6ce6);
     color: #333; /* Color de texto oscuro para buen contraste */
+    width: 100%;
 }
+
+
 main{
     justify-content: center;
     align-items: center;
@@ -30,7 +39,7 @@ section {
     }
 
     background-color: white; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados para un look mas suave */
+    border-radius: 2px; /* Bordes redondeados para un look mas suave */
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
     padding: 0%; /* Espaciado interno para mis bloques de section */
     text-align: center; /* Centrar el contenido */
@@ -43,16 +52,16 @@ section {
 /*INICIO NAVBAR SETTINGS*/
 .logo_container {
     display: flex;
-    align-items: center; /* Alinea verticalmente el logo y el t�tulo */
+    align-items: center; /* Alinea verticalmente el logo y el titulo */
 }
 
 .logo {
-    height: 50px; /* Ajusta el tama�o del logo */
-    margin-right: 10px; /* Espaciado entre el logo y el t�tulo */
+    height: 50px; 
+    margin-right: 10px; /* Espaciado entre el logo y el titulo */
 }
 
 .titulo_ico {
-    color: white;
+    color: black;
     font-size: 24px;
     margin: 0; /* Elimina margenes */
 }
@@ -101,8 +110,7 @@ nav ul {
     position: relative;
     margin: 0% auto;
     padding: 0em;
-    border-radius: 10px;
-    box-shadow: 5px 2px 12px black;
+    
     }
 .container_inicio img{
     width: 100%;
@@ -128,7 +136,7 @@ nav ul {
     transform: translateX(-50%); /* Ajustar al centro */
     z-index: 2; /* Encima de la imagen */
 }
-.container_inicio p{
+.container_inicio h2{
     position: absolute;
     font-size: 3rem;
     align-content:center;
@@ -141,13 +149,31 @@ nav ul {
     border-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
 }
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 /*Body FINAL*/
 
 /*Footer*/
 footer{
-    text-align: center;
+    align-items: center;
 }
-/*FIN footer*/
+.container_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    height: 1em;
+}
+.container_texto_footer{
+    text-align: left;
+}
+.container_iframe_footer{
+    text-align: right;
+}
+/*FIN Footer*/
 
 /*Formulario*/
 .contenedor_formulario {
