@@ -1,19 +1,23 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5; /* Fondo neutro */
-    color: #333; /* Color de texto oscuro para buen contraste */
-}
-
 /* Estilo para el contenedor del header */
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y la barra de navegación a la derecha */
+    justify-content: space-between; /* Alinea el logo a la izquierda y la barra de navegaciï¿½n a la derecha */
     align-items: center; /* Alinea verticalmente en el centro */
     padding: 5px 20px; /* Espaciado alrededor */
    
 }
-
+/*ESTILO PARA LA ESTRUCTURA SEMANTICA*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(white, #cb6ce6);
+    color: #333; /* Color de texto oscuro para buen contraste */
+}
+main{
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
 section {
     /* typical phone screen resolution */
     @media only screen and (max-width : 667px) {
@@ -26,44 +30,35 @@ section {
     }
 
     background-color: white; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados para un look más suave */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-    padding: 30px; /* Espaciado interno amplio */
-    text-align: center; /* Centramos el contenido */
+    border-radius: 15px; /* Bordes redondeados para un look mas suave */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    padding: 0%; /* Espaciado interno para mis bloques de section */
+    text-align: center; /* Centrar el contenido */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 95%; /* Ancho máximo para controlar el tamaño */
-    margin: auto; /* Centrar el bloque en la página */
+    max-width: 100%; /* Ancho maximo para controlar el tamanio */
+    margin: auto; /* Centrar el bloque en la pagina */
 }
-.boton-info {
-    background-color: #cb6ce6; /* Fondo lila */
-    color: white; /* Texto en blanco */
-    border: none;
-    border-radius: 25px; /* Bordes redondeados para el botón */
-    padding: 10px 20px;
-    margin:1%;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+/*FIN ESTILO DE ESTRUCTURA SEMANTICA*/
 
-.logo-container {
+/*INICIO NAVBAR SETTINGS*/
+.logo_container {
     display: flex;
-    align-items: center; /* Alinea verticalmente el logo y el título */
+    align-items: center; /* Alinea verticalmente el logo y el tï¿½tulo */
 }
 
 .logo {
-    height: 50px; /* Ajusta el tamaño del logo */
-    margin-right: 10px; /* Espaciado entre el logo y el título */
+    height: 50px; /* Ajusta el tamaï¿½o del logo */
+    margin-right: 10px; /* Espaciado entre el logo y el tï¿½tulo */
 }
 
-.titulo-ico {
+.titulo_ico {
     color: white;
     font-size: 24px;
-    margin: 0; /* Elimina márgenes */
+    margin: 0; /* Elimina margenes */
 }
 
 
-/* Estilo para la barra de navegación */
+/* Estilo para la barra de navegacion */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -87,14 +82,137 @@ nav ul {
             nav ul li a:hover {
                 background-color: black; /* Cambia de color cuando pasas el mouse */
             }
-.text-index{
-    margin:20%;
-    padding:10%;
+/*FIN NAV SETTINGS*/
+/*Body Inicio*/
+.container_inicio{
+        z-index: index 1;;
+          /* typical phone screen resolution */
+    @media only screen and (max-width : 667px) {
+    }
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    }
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+    width: 100%;
+    height: 3%;
+    overflow: hidden;
+    position: relative;
+    margin: 0% auto;
+    padding: 0em;
+    border-radius: 10px;
+    box-shadow: 5px 2px 12px black;
+    }
+.container_inicio img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+.boton_info {
+    background-color: #cb6ce6; /* Fondo lila */
+    color: white; /* Texto en blanco */
+    border:0cm;
+    border-radius: 25px; /* Bordes redondeados para el botï¿½n */
+    padding: 15px 20px;
+    margin:1%;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    position: absolute; /* Relativo al contenedor */
+    bottom: 10%; /* Distancia desde el fondo de la imagen */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar al centro */
+    z-index: 2; /* Encima de la imagen */
+}
+.container_inicio p{
+    position: absolute;
+    font-size: 3rem;
     align-content:center;
     justify-content:center;
     z-index:10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+}
+/*Body FINAL*/
+
+/*Footer*/
+footer{
+    text-align: center;
+}
+/*FIN footer*/
+
+/*Formulario*/
+.contenedor_formulario {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-    .image-index{
-        z-index:5;
-    }
+.formulario_de_contacto {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    gap: 15px; /* Espaciado entre los campos */
+}
+/*Titulo de mi formulario*/
+.formulario_de_contacto h2 {
+    text-align: center; 
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333; 
+}
+
+.formulario_de_contacto label{
+    font-size: 1em;
+    color: #555; /* Texto de etiquetas */
+}
+
+.formulario_de_contacto input,
+.formulario_de_contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+    background-color: #fff; /* Fondo blanco */
+}
+
+.formulario_de_contacto input:focus,
+.formulario_de_contacto textarea:focus {
+    border-color: #cb6ce6; /* Resaltar al enfocar */
+    outline: none; 
+    box-shadow: 0 0 5px rgba(203, 108, 230, 0.5); /* Resaltar con sombra */
+}
+
+.formulario_de_contacto textarea {
+    resize: none; /* Evitar redimensionamiento manual */
+}
+
+.formulario_de_contacto .submit_btn {
+    background-color: #cb6ce6; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario_de_contacto .submit_btn:hover {
+    background-color: #b453d3; /* Color mÃ¡s oscuro al pasar el mouse */
+}
+
+/*FIN Formulario*/
