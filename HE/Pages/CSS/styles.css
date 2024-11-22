@@ -157,21 +157,18 @@ nav ul {
 /*Body FINAL*/
 
 /*Footer*/
-footer{
-    align-items: center;
+a{
+    text-decoration: none;
+    font-size: 17px;
 }
-.container_footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    height: 1em;
+p{
+    font-size: 17px;
 }
-.container_texto_footer{
-    text-align: left;
+a:hover{
+    color:#cb6ce6 !important;
 }
-.container_iframe_footer{
-    text-align: right;
+i{
+    font-size: 25px; /*tamaño de mis iconos*/
 }
 /*FIN Footer*/
 
