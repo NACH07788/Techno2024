@@ -5,7 +5,22 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
+    @media only screen and (max-width : 667px) {
+        display: flex;
+        flex-direction: column;
+       }
 
+       /* landscape orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        display: flex;
+        flex-direction: column;
+       }
+   
+       /* portrait orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        display: flex;
+        flex-direction: column;
+       }
 }
 
 /*ESTILO PARA LA ESTRUCTURA SEMANTICA*/
@@ -18,6 +33,23 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    @media only screen and (max-width : 667px) {
+        display: flex;
+        flex-direction: column;
+       }
+
+       /* landscape orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        display: flex;
+        flex-direction: column;
+       }
+   
+       /* portrait orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+       }
 }
 
 /* Estilo para el contenedor del header */
@@ -30,6 +62,23 @@ header {
     /* Alinea verticalmente en el centro */
     padding: 5px 20px;
     /* Espaciado alrededor */
+       /* typical phone screen resolution */
+       @media only screen and (max-width : 667px) {
+        display: flex;
+        flex-direction: column;
+       }
+
+       /* landscape orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        display: flex;
+        flex-direction: column;
+       }
+   
+       /* portrait orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        display: flex;
+        flex-direction: column;
+       }
 
 }
 
@@ -48,7 +97,10 @@ section {
     @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {}
 
     /* portrait orientation */
-    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {}
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+          display: flex;
+        flex-direction: column;
+    }
 
     background-color: white;
     /* Fondo blanco */
@@ -98,6 +150,25 @@ nav ul {
     padding: 0;
     display: flex;
     /* Alinea los elementos de la lista en una fila */
+    @media only screen and (max-width : 667px) {
+        display: flex;
+        flex-direction:row;
+        margin: 1em;
+       }
+
+       /* landscape orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+       }
+   
+       /* portrait orientation */
+       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+       }
 }
 
 nav ul li {
