@@ -50,9 +50,10 @@ function armarCartas() {
               <a href="" class="text-reset">
                 <h5 class="card-title mb-3">${trabajo.tittle}</h5>
               </a>
-              <a href="" class="text-reset">
-                <p>${trabajo.description}</p>
-              </a>
+              <div>
+                <button class="btn btn-primary btn-descripcion" data-id="${trabajo.id}">Ver Descripción</button>
+                <p class="descripcion-texto" style="display: none;">${trabajo.description}</p>
+              </div>
               <h6 class="mb-3">
                 <s>PRECIO LISTA (PROXIMAMENTE)</s><strong class="ms-2 text-danger">$${trabajo.price}</strong>
               </h6>
@@ -62,8 +63,16 @@ function armarCartas() {
     contenedor.append(cartaBootStrap);
   });
   trabajosContainer.append(contenedor);
+  
+  document.querySelectorAll('.btn-descripcion').forEach(button => {
+    button.addEventListener('click', (e) => {
+      const descriptionText = e.target.nextElementSibling;
+      if (descriptionText.style.display === 'none') {
+        descriptionText.style.display = 'block';
+      } else {
+        descriptionText.style.display = 'none';
+      }
+    });
+  });
 }
 
-// Llamar funciones
-showWorks();
-armarCartas();
