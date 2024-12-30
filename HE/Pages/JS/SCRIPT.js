@@ -1,70 +1,69 @@
-
-
-let trabajos = [{
+let trabajos = [
+  {
     "id": 1111,
     "tittle": "Macetero B-1",
-    "price": 2.999,
+    "price": 2999,
     "description": "lorem"
-},
-{
+  },
+  {
     "id": 3333,
     "tittle": "Macetero B-3",
-    "price": 3.999,
+    "price": 3999,
     "description": "lorem"
-},
-{
+  },
+  {
     "id": 4444,
     "tittle": "Macetero B-4",
-    "price": 7.999,
+    "price": 7999,
     "description": "lorem"
-},
-{
+  },
+  {
     "id": 5555,
     "tittle": "Macetero B-5",
-    "price": 5.999,
+    "price": 5999,
     "description": "lorem"
-}
-    //Para probar la carga
+  }
+];
 
-]
-
-//Modificar DOM
+// Mostrar datos en consola
 function showWorks() {
-    for(let i = 0; i < trabajos.length; i++) {
-        console.log(trabajos[i]);
-    }
+  for (let i = 0; i < trabajos.length; i++) {
+    console.log(trabajos[i]);
+  }
 }
 
-
-
-document.getElementById('Trabajos');
+// Modificar DOM
+let trabajosContainer = document.getElementById('Trabajos');
 let contenedor = document.createElement('div');
 contenedor.className = 'row';
-let cartaBootStrap = document.createElement('div');
-cartaBootStrap.className = 'col-lg-4 col-md-6 mb-4';
 
-contenedor.innerHTML =
-    `<div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                <img src="..\CSS\Productos\MACETAS\MACETERO_B4.jpeg" class="w-100" />
-              </div>
-              <div class="card-body">
-                <a href="" class="text-reset">
-                  <h5 class="card-title mb-3">MACETERO_B4</h5>
-                </a>
-                <a href="" class="text-reset">
-                  <p>REJAS</p>
-                </a>
-                <h6 class="mb-3">
-                  <s>$6299</s><strong class="ms-2 text-danger">$4000</strong>
-                </h6>
-              </div>
+function armarCartas() {
+  trabajos.forEach(trabajo => {
+    let cartaBootStrap = document.createElement('div');
+    cartaBootStrap.innerHTML =
+      `<div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="#" alt="${trabajo.tittle}" />
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">${trabajo.tittle}</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>${trabajo.description}</p>
+              </a>
+              <h6 class="mb-3">
+                <s>PRECIO LISTA (PROXIMAMENTE)</s><strong class="ms-2 text-danger">$${trabajo.price}</strong>
+              </h6>
             </div>
           </div>
-          
-          
-          `;
+       </div>`;
+    contenedor.append(cartaBootStrap);
+  });
+  trabajosContainer.append(contenedor);
+}
 
-
-contenedor.appendChild(card);       
+// Llamar funciones
+showWorks();
+armarCartas();
