@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="../CSS/styles.css" rel="stylesheet" />
+
+ <link href="../CSS/styles.css" rel="stylesheet" />
+ 
   <title>Herreria Emiliano</title>
 </head>
 
@@ -41,12 +43,13 @@
             </svg></a></li>
       </ul>
     </nav>
-
+ 
   </header>
   <main>
-    <section class="row">
+    <section id ="Trabajos" class="row">
       <div class="text-center container py-6 px-5">
         <h4 class="mt-4 mb-5"><strong>Trabajos</strong></h4>
+        <button onclick = "showWorks()" id="btn-agregar-pdcts" class="boton-info">AGREGAR PRODUCTOS</button>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4">
@@ -67,41 +70,10 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                <img src="..\CSS\Productos\MACETAS\MACETERO_B1.webp" class="w-100" />
-              </div>
-              <div class="card-body">
-                <a href="" class="text-reset">
-                  <h5 class="card-title mb-3">MACETERO_B1</h5>
-                </a>
-                <a href="" class="text-reset">
-                  <p>Macetas</p>
-                </a>
-                <h6 class="mb-3">$1500</h6>
-              </div>
-            </div>
+           
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                <img src="..\CSS\Productos\MACETAS\MACETERO_B4.jpeg" class="w-100" />
-              </div>
-              <div class="card-body">
-                <a href="" class="text-reset">
-                  <h5 class="card-title mb-3">MACETERO_B4</h5>
-                </a>
-                <a href="" class="text-reset">
-                  <p>REJAS</p>
-                </a>
-                <h6 class="mb-3">
-                  <s>$6299</s><strong class="ms-2 text-danger">$4000</strong>
-                </h6>
-              </div>
-            </div>
-          </div>
+         
         </div>
 
         <div class="row">
@@ -133,7 +105,7 @@
                 <a href="" class="text-reset">
                   <h5 class="card-title mb-3">FRENTE DE REJAS</h5>
                 </a>
-                <a href="" class="text-reset">
+                <a href="" class="text-reset">  
                   <p>REJAS</p>
                 </a>
                 <button type="button"><a href="contacto.html">Contacto</a></button>
@@ -162,6 +134,7 @@
 
     </section>
   </main>
+  <script src="../JS/SCRIPT.js"></script>
 </body>
 
 <footer class="text-dark pt-5 pb-4">
