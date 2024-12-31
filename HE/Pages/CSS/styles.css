@@ -295,7 +295,17 @@ nav ul li a:hover {
         bottom: 8%;
     }
 }
-
+.boton-card{
+ text-align: center;
+     text-decoration: none;
+         color: white;
+         margin: 2em;
+             padding: 10px 15px;
+                 background-color: #cb6ce6;
+                     /* Color del fondo de los botones */
+                         border-radius: 20px;
+                             transition: background-color 0.3s ease;
+}
 /*Body FINAL*/
 
 /*Footer*/
