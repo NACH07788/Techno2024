@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{      margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
 
 html {
     margin: 0;
@@ -6,22 +10,23 @@ html {
     width: 100%;
     height: 100%;
     display: flex;
+
     @media only screen and (max-width : 667px) {
         display: flex;
         flex-direction: column;
-       }
+    }
 
-       /* landscape orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
         display: flex;
         flex-direction: column;
-       }
-   
-       /* portrait orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
         display: flex;
         flex-direction: column;
-       }
+    }
 }
 
 /*ESTILO PARA LA ESTRUCTURA SEMANTICA*/
@@ -34,23 +39,24 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+
     @media only screen and (max-width : 667px) {
         display: flex;
         flex-direction: column;
-       }
+    }
 
-       /* landscape orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
         display: flex;
         flex-direction: column;
-       }
-   
-       /* portrait orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
         display: flex;
         flex-direction: column;
         overflow-x: auto;
-       }
+    }
 }
 
 /* Estilo para el contenedor del header */
@@ -62,24 +68,25 @@ header {
     align-items: center;
     /* Alinea verticalmente en el centro */
     padding: 5px 20px;
-    /* Espaciado alrededor */
-       /* typical phone screen resolution */
-       @media only screen and (max-width : 667px) {
-        display: flex;
-        flex-direction: column;
-       }
 
-       /* landscape orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /* Espaciado alrededor */
+    /* typical phone screen resolution */
+    @media only screen and (max-width : 667px) {
         display: flex;
         flex-direction: column;
-       }
-   
-       /* portrait orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
         display: flex;
         flex-direction: column;
-       }
+    }
+
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -99,7 +106,7 @@ section {
 
     /* portrait orientation */
     @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
-          display: flex;
+        display: flex;
         flex-direction: column;
     }
 
@@ -129,8 +136,10 @@ section {
     align-items: center;
     /* Alinea verticalmente el logo y el titulo */
 }
-
-.logo {
+.logo_container img:hover{
+    scale: 1.1;
+}
+.logo{
     height: 50px;
     margin-right: 10px;
     /* Espaciado entre el logo y el titulo */
@@ -151,46 +160,50 @@ nav ul {
     margin: 1em;
     padding: 1em;
     display: flex;
+
     /* Alinea los elementos de la lista en una fila */
     @media only screen and (max-width : 667px) {
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         margin: 1em;
-       }
+    }
 
-       /* landscape orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /* landscape orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
         display: flex;
         flex-direction: row;
         margin: 1em;
-       }
-   
-       /* portrait orientation */
-       @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    }
+
+    /* portrait orientation */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
         display: flex;
         flex-direction: row;
         margin: 1em;
-       }
+    }
 }
 
 nav ul li {
     margin-left: 2%;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    background-color: #cb6ce6;
-    /* Color del fondo de los botones */
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+nav ul li:hover{
+    scale: 1.1;
 }
 
-nav ul li a:hover {
-    background-color: black;
-    /* Cambia de color cuando pasas el mouse */
+nav ul li a {
+    text-decoration: none;
+    color: #cb6ce6;
+    list-style:circle;
+    padding: 2rem 1rem;    /* Color del fondo de los botones */
+    border-radius: 10em;
+    transition: background-color 0.6s ease;
+    transition: color 0.4 ease;
 }
+
+/*nav ul li a:hover {
+    background-color: black;}
+     Cambia de color cuando pasas el mouse */
 
 /*FIN NAV SETTINGS*/
 /*Body Inicio*/
@@ -295,23 +308,26 @@ nav ul li a:hover {
         bottom: 8%;
     }
 }
-.boton-card{
- text-align: center;
-     text-decoration: none;
-         color: white;
-         margin: 2em;
-             padding: 10px 15px;
-                 background-color: #cb6ce6;
-                     /* Color del fondo de los botones */
-                         border-radius: 20px;
-                             transition: background-color 0.3s ease;
+
+.boton-card {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 2em;
+    padding: 10px 15px;
+    background-color: #cb6ce6;
+    /* Color del fondo de los botones */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
+
 /*Body FINAL*/
 
 /*Footer*/
-footer{
+footer {
     width: auto;
 }
+
 a {
     text-decoration: none;
     font-size: 17px;
@@ -416,3 +432,23 @@ i {
 }
 
 /*FIN Formulario*/
+
+/*Imagen de card-trabajos*/
+.bg-image img {
+    width: 70%;
+    height: auto;
+    max-height: 200px;
+    object-fit:contain;
+    border-radius: 10px; 
+  }
+
+  /*Boton carrito*/
+  .container-carr{
+    
+  }
+  .btn_carr{
+
+    position: fixed;
+    padding: 0%;
+    margin: 1;
+  }
